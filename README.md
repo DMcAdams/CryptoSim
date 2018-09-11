@@ -7,7 +7,7 @@
 ./bot.js - The starting point for the bot. Handles Discord authentication
   and then moves everything over to the CryptoSim module.
 
-auth.json - holds the bot's TOP SECERET token. Not included, will add a dummy one later.
+./auth.json - holds the bot's TOP SECERET token. Not included, will add a dummy one later.
 
 ./Images - I forgot to delete this.
 
