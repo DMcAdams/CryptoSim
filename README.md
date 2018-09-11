@@ -2,9 +2,9 @@
 
 ## Files
 
-run.bat - A simple bat file that starts the bot.
+./run.bat - A simple bat file that starts the bot.
 
-bot.js - The starting point for the bot. Handles Discord authentication
+./bot.js - The starting point for the bot. Handles Discord authentication
   and then moves everything over to the CryptoSim module.
 
 auth.json - holds the bot's TOP SECERET token. Not included, will add a dummy one later.
