@@ -1,6 +1,7 @@
 # CryptoSim
 
-# Files:
+## Files
+
 run.bat - A simple bat file that starts the bot.
 
 bot.js - The starting point for the bot. Handles Discord authentication
