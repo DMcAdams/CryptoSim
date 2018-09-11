@@ -7,9 +7,9 @@ const cc = require('cryptocompare')
 client.on("ready", () => {
   console.log("CryptoSim ready!");
 });
-//cc.coinList().then(coinList => {
-//  console.log(coinList).catch(console.error)});
-// Usage:
 
+//pass off bot to CryptoSim
 start(client);
+
+//for authentication
 client.login(auth.token);
