@@ -1,7 +1,7 @@
 //used for accessing CryptoCompare API
 global.fetch = require('node-fetch');
 //used to hold player info
-let player = require("./src/player.json");
+let player = require("./src/players.js")
 //used to make messages look pretty
 const { Client, Attachment, RichEmbed } = require('discord.js');
 //for I/O on json file
@@ -37,7 +37,7 @@ module.exports = function (client, options) {
           doge: 0.0
         };
       }
-      fs.writeFile("./node_modules/CryptoSim/src/player.json", JSON.stringify(player), (err)=> {
+      fs.writeFile("./src/players.json", JSON.stringify(player), (err)=> {
         if (err) console.log(err);
       });
       //gets the first part of the command (buy, sell, ping, etc)
@@ -260,7 +260,7 @@ function buy (msg, name, amt){
         break;
     }
     //update the JSON file
-    fs.writeFile("./node_modules/CryptoSim/src/player.json", JSON.stringify(player), (err)=> {
+    fs.writeFile("./src/players.json", JSON.stringify(player), (err)=> {
       if (err) console.log(err);
     });
 
